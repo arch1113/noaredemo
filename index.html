@@ -2,118 +2,52 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Noaré</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-
-    header {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: #fff;
-    }
-
-    .menu-icon {
-      font-size: 26px;
-      cursor: pointer;
-      display: block;
-      color: #fff;
-    }
-
-    nav {
-      display: none;
-      background: rgba(0, 0, 0, 0.9);
-      position: fixed;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      padding: 20px;
-      z-index: 10;
-    }
-
-    nav a {
-      display: block;
-      margin: 10px 0;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    #about {
-      display: none;
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.7);
-      max-width: 800px;
-      margin: 50px auto;
-      border-radius: 10px;
-    }
-
-    .slogan {
-      text-align: center;
-      font-size: 30px;
-      font-style: italic;
-      color: #a7f0f9;
-      margin-top: 40px;
-      text-shadow: 0 0 10px #00ffe7;
-    }
-
-    .icon {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      width: 40px;
-      opacity: 0.8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Noaré</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Noaré</h1>
+        <div class="slogan">Zarafet bir seçimdir</div>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#urunler">Ürünler</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <div class="logo">Noaré</div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-  </header>
+    <section id="hakkimizda">
+        <h2>Hakkımızda</h2>
+        <p>Noaré, kökleri 1922 yılına uzanan, Türkiye merkezli bir çanta ve kozmetik markasıdır. Markanın hikayesi, kurucusunun dedesinin çantacılık mesleğiyle başlar. Zanaatkarlığın inceliğiyle yetişen bir neslin mirası olarak doğan Noaré bu geleneksel birikimi günümüz tasarım anlayışı ve bilimsel yaklaşımla harmanlayarak çağdaş bir marka kimliği oluşturmuştur. Ankara'daki üretim tesisinde faaliyet gösteren Noare çanta ve kozmetik ürünlerinde tamamen orijinal tasarımlar sunar. Çanta tasarımları, aileden gelen yıllara dayalı ustalıkla şekillendirilirken, parfüm ve kozmetik ürünlerinin formülleri markanın kendi bünyesinde çalışan kimyagerler tarafından özel olarak geliştirilmektedir. Noare sadece bir marka değil; aynı zamanda bir mirasın, emeğin ve yeniliğin buluşma noktasıdır. Her ürününde kalite, özgünlük ve karakter barındıran marka, "geçmişin ustalığını geleceğe taşıma" misyonunu benimseyerek yerel üretime ve sürdürülebilirliğe de büyük önem verir. Bugün Noare, hem yerel hem uluslararası pazarda fark yaratan bir marka olma yolunda ilerlemektedir.</p>
+    </section>
 
-  <nav id="nav">
-    <a href="#" onclick="showAbout()">Hakkımızda</a>
-    <a href="#">Ürünler</a>
-  </nav>
+    <section id="urunler">
+        <h2>Çantalar</h2>
+        <div class="urun">Çanta 1 - 48.000₺</div>
+        <div class="urun">Çanta 2 - 48.000₺</div>
+        <div class="urun">Çanta 3 - 48.000₺</div>
+        <div class="urun">Çanta 4 - 48.000₺</div>
+        <div class="urun">Çanta 5 - 48.000₺</div>
 
-  <div id="about">
-    <h2>Hakkımızda</h2>
-    <p>Noaré, kökleri 1922 yılına uzanan, Türkiye merkezli bir çanta ve kozmetik markasıdır. Markanın hikayesi, kurucusunun dedesinin çantacılık mesleğiyle başlar. Zanaatkarlığın inceliğiyle yetişen bir neslin mirası olarak doğan Noaré bu geleneksel birikimi günümüz tasarım anlayışı ve bilimsel yaklaşımla harmanlayarak çağdaş bir marka kimliği oluşturmuştur. Ankara'daki üretim tesisinde faaliyet gösteren Noaré çanta ve kozmetik ürünlerinde tamamen orijinal tasarımlar sunar. Çanta tasarımları, aileden gelen yıllara dayalı ustalıkla şekillendirilirken, parfüm ve kozmetik ürünlerinin formülleri markanın kendi bünyesinde çalışan kimyagerler tarafından özel olarak geliştirilmektedir. Noaré sadece bir marka değil; aynı zamanda bir mirasın, emeğin ve yeniliğin buluşma noktasıdır. Her ürününde kalite, özgünlük ve karakter barındıran marka, ''geçmişin ustalığını geleceğe taşıma'' misyonunu benimseyerek yerel üretime ve sürdürülebilirliğe de büyük önem verir. Bugün Noaré, hem yerel hem uluslararası pazarda fark yaratan bir marka olma yolunda ilerlemektedir.</p>
-  </div>
+        <h2>Parfümler</h2>
+        <div class="urun">Parfüm 1 - 15.000₺</div>
+        <div class="urun">Parfüm 2 - 15.000₺</div>
+        <div class="urun">Parfüm 3 - 15.000₺</div>
+        <div class="urun">Parfüm 4 - 15.000₺</div>
+        <div class="urun">Parfüm 5 - 15.000₺</div>
+    </section>
 
-  <div class="slogan">Zarafet bir seçimdir</div>
+    <img src="images/heel-icon.png" alt="Heel Icon" class="heel-icon">
 
-  <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3580/3580253.png" alt="topuklu ayakkabı">
-
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('nav');
-      nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-    }
-
-    function showAbout() {
-      document.getElementById('about').style.display = 'block';
-      document.getElementById('nav').style.display = 'none';
-    }
-  </script>
-
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+    </script>
 </body>
 </html>
