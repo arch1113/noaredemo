@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noaré - Zarafet Bir Seçimdir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #c3dfe6 0%, #e4eff7 100%);
+      color: #333;
+    }
+    header {
+      background: transparent;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: none;
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      color: #5a3e7f; /* Mor ton */
+    }
+    header p.slogan {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #d67fb2; /* Pembe-mor */
+      font-weight: 300;
+      font-style: italic;
+      transform: skewX(-15deg);
+      text-align: right;
+      margin: 0.5rem 2rem 0 2rem;
+      text-shadow: 1px 1px 4px rgba(214, 127, 178, 0.6);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5a3e7f;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #d67fb2;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    #products {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(214, 127, 178, 0.4);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #fafafa;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Noaré</h1>
+    <p class="slogan">Zarafet bir seçimdir</p>
+  </header>
+
+  <nav>
+    <a href="#">Ana Sayfa</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">Ürünler</a>
+    <a href="#">İletişim</a>
+  </nav>
+
+  <main>
+    <h2>Hoş geldiniz</h2>
+    <p>Noaré, zarafet ve şıklığın buluştuğu parfüm ve çanta markasıdır. Ürün koleksiyonumuzu keşfedin ve stilinize özgün bir dokunuş katın.</p>
+
+    <section id="products">
+      <h3>Ürünlerimiz</h3>
+
+      <div class="product">
+        <h4>Parfüm</h4>
+        <p>Fiyat: 15.000 ₺</p>
+        <img src="https://via.placeholder.com/150?text=Noaré+Parfüm" alt="Noaré Parfüm" />
+      </div>
+
+      <div class="product">
+        <h4>Çanta</h4>
+        <p>Fiyat: 48.000 ₺</p>
+        <img src="https://via.placeholder.com/150?text=Noaré+Çanta" alt="Noaré Çanta" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Noaré. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
