@@ -1,0 +1,94 @@
+/* Genel */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  background: #fff;
+  color: #222;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #f4f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#homeBtn {
+  font-style: italic;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: auto;
+}
+
+#burgerNav {
+  position: relative;
+}
+
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 100%;
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  background: #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 60px;
+}
+
+#shoeIcon {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: default;
+  opacity: 0.8;
+}

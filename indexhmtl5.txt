@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Noare Demo</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <button id="homeBtn">Homepage</button>
+  <nav id="burgerNav">
+    <div id="burgerMenu" class="burger-menu">
+      <div></div><div></div><div></div>
+    </div>
+    <ul id="navLinks" class="nav-links hidden">
+      <li><a href="#parfumler">Parfümler</a></li>
+      <li><a href="#cantalar">Çantalar</a></li>
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="homePage" class="page visible">
+    <h1>zarafet bir seçimdir</h1>
+  </section>
+
+  <section id="parfumler" class="page hidden">
+    <h2>Parfümler</h2>
+    <p>Buraya parfümlerle ilgili içerik gelecek.</p>
+  </section>
+
+  <section id="cantalar" class="page hidden">
+    <h2>Çantalar</h2>
+    <p>Buraya çantalarla ilgili içerik gelecek.</p>
+  </section>
+
+  <section id="hakkimizda" class="page hidden">
+    <h2>Hakkımızda</h2>
+    <p><em>
+      Sana yazdığım metin burada kalacak.<br/>
+      (Sen bana göndermek istersen metni ayrıca yazabilirsin, şimdilik örnek bırakıyorum.)
+    </em></p>
+  </section>
+
+  <section id="iletisim" class="page hidden">
+    <h2>İletişim</h2>
+    <p>Buraya iletişim bilgileri gelecek.</p>
+  </section>
+</main>
+
+<div id="shoeIcon">
+  <!-- Siyah kadın topuklu ayakkabı SVG ikonu -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="black" width="50" height="50">
+    <path d="M10 50 L20 40 L40 40 L45 45 L40 55 L15 55 Z" />
+    <path d="M20 40 Q25 30 35 30 Q40 30 40 35 L30 40 Z" />
+  </svg>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

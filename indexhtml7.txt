@@ -1,0 +1,35 @@
+const burgerMenu = document.getElementById('burgerMenu');
+const navLinks = document.getElementById('navLinks');
+const homeBtn = document.getElementById('homeBtn');
+const pages = document.querySelectorAll('main .page');
+
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('hidden');
+});
+
+function showPage(id) {
+  pages.forEach(p => {
+    if (p.id === id) {
+      p.classList.remove('hidden');
+      p.classList.add('visible');
+    } else {
+      p.classList.remove('visible');
+      p.classList.add('hidden');
+    }
+  });
+  navLinks.classList.add('hidden');
+}
+
+// Menü linklerine tıklanınca sayfayı değiştir
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    showPage(targetId);
+  });
+});
+
+// Homepage butonuna tıklanınca ana sayfaya dön
+homeBtn.addEventListener('click', () => {
+  showPage('homePage');
+});
